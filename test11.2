@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp44
+{
+    class Program
+    {
+        static void Main(string[] args)
+
+
+
+
+        {
+            string[] nameArray = new string[] { "Liam", "Olivia", "Emma", "Noah", "Blake", "Olivia", "Ava", "William", "Sophia", "Elijah", "Isabella", "James", "Benjamin", "Charlotte", "Amelia", "Lucas", "Mia", "Mason", "Harper", "Ethan", "Evelyn" };
+
+            // Input.
+            Console.WriteLine(String.Format("Select an item from the array using numbers {0}-{1}", 0, nameArray.Length));
+            string selectedIndexString = Console.ReadLine();
+
+            int selectedIndex = Convert.ToInt32(selectedIndexString);
+            if (selectedIndex < 0 || selectedIndex >= nameArray.Length)
+            {
+                throw new ArgumentException(String.Format("The index must belong to the range: [{0}:{1}]", 0, nameArray.Length));
+            }
+            string selectedString = nameArray[selectedIndex];
+
+            Console.WriteLine(String.Format("You have choosen: {0} . What would you like to know about {0}? (enter “hometown” or “favorite food”)", selectedString));
+            string TheTwoOptions = Console.ReadLine();
+
+
+
+            // bool Liam =  TheTwoOptions == ("hometown");
+
+            {
+                if (selectedIndexString == "Liam")  && (String TheTwoOptions == ("hometown"));
+                {
+                    Console.WriteLine("Detroit");
+                }
+
+                // static bool IsJames(string name)
+                //{
+                //if (name.Equals("james", StringComparison.OrdinalIgnoreCase))
+                //{
+                //   return true;
+                // }
+
+                //   return false;
+                // }
+
+            }
+
+        }
+    }
+}
+
+
